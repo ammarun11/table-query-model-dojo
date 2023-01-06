@@ -29,7 +29,7 @@ docker build --tag katanaml/table-query .
 2. Run container
 
 ```
-docker run -it -d --name table-query -p 7000:7000  katanaml/table-query:latest
+docker run -it -d --name table-query -p 7000:7000  palopalepalo/table-qery-model-dojo:v1
 ```
 
 ## Structure
