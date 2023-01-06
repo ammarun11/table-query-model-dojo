@@ -23,7 +23,7 @@ python app.py
 1. Build container (uncomment launch call in app.py)
 
 ```
-docker build --tag katanaml/table-query .
+docker build --tag palopalepalo/table-query-dojo:v1 .
 ```
 
 2. Run container
