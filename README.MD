@@ -29,9 +29,12 @@ docker build --tag palopalepalo/table-query-dojo:v1 .
 2. Run container
 
 ```
-docker run -it -d --name table-query -p 7000:7000  palopalepalo/table-qery-model-dojo:v1
+docker run -it -d --name table-query -p 7000:7000  palopalepalo/table-query-dojo:v1
 ```
 
+limit resource 
+
+docker run -it -d --name table-query --memory=4000m --cpus=4 -p 7000:7000  palopalepalo/table-query-dojo:v1 
 ## Structure
 
 ```

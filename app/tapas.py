@@ -16,7 +16,7 @@ def execute_query(query, csv_file):
 
     queries = [query]
 
-    inputs = tokenizer(table=table, queries=queries, padding="max_length", return_tensors="tf")
+    inputs = tokenizer(table=table, queries=queries, padding="max_length", return_tensors="tf", drop_rows_to_fit="True")
     outputs = model(**inputs)
 
     predicted_answer_coordinates, predicted_aggregation_indices = tokenizer.convert_logits_to_predictions(
